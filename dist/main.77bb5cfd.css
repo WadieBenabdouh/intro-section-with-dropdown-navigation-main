@@ -35,6 +35,9 @@ header .brand-links nav .hot-links {
   display: flex;
   gap: 1.5em;
 }
+header .brand-links nav .hot-links a:hover .svg-arrow {
+  rotate: 180deg;
+}
 header .brand-links nav .hot-links li:nth-child(1),
 header .brand-links nav .hot-links li:nth-child(2) {
   position: relative;
