@@ -52,14 +52,18 @@ header .brand-links nav .hot-links li:nth-child(2) .dropdown {
   padding: 10px 0;
   border-radius: 10px;
   box-shadow: 1px 0px 20px #c2bfbf;
-  width: 10em;
+  width: 8em;
 }
 header .brand-links nav .hot-links li:nth-child(1) .dropdown ul,
 header .brand-links nav .hot-links li:nth-child(2) .dropdown ul {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1em;
   padding: 10px;
+}
+header .brand-links nav .hot-links li:nth-child(1) .dropdown ul li,
+header .brand-links nav .hot-links li:nth-child(2) .dropdown ul li {
+  display: flex;
 }
 header .brand-links nav .hot-links li:nth-child(1) .dropdown ul li a,
 header .brand-links nav .hot-links li:nth-child(2) .dropdown ul li a {

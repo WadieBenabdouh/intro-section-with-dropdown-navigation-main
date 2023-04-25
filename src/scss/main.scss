@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    // BRAND LINKS
     .brand-links {
         display: flex;
         flex-basis: 35%;
@@ -61,29 +61,27 @@ header {
                     padding: 10px 0;
                     border-radius: 10px;
                     box-shadow: 1px 0px 20px #c2bfbf;
-                    width: 10em;
+                    width: 8em;
 
                     ul {
                         display: flex;
                         flex-direction: column;
-                        gap: 1.5em;
+                        gap: 1em;
                         padding: 10px;
 
                         li {
+                            display: flex;
 
                             a {
                                 display: flex;
                                 align-items: center;
                                 gap: 1em;
-
                             }
 
                             a:hover {
                                 color: $gray;
                             }
                         }
-
-
                     }
                 }
             }
@@ -96,7 +94,7 @@ header {
             }
         }
     }
-
+    // LOGINS
     .logins {
         ul {
             display: flex;
