@@ -15,4 +15,9 @@ nav a {
   text-decoration: none;
 }
 
+body {
+  padding: 1em 2em;
+  min-height: 100vh;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

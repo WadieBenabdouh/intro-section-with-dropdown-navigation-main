@@ -9,12 +9,15 @@ $black: hsl(0, 0%, 8%);
     box-sizing: border-box;
     font-family: 'Epilogue', sans-serif;
 }
-
 ul {
     list-style-type: none;
 }
-
 nav a {
     color: var(--gray);
     text-decoration: none;
+}
+// BODY
+body{
+    padding: 1em 2em;
+    min-height: 100vh;
 }
