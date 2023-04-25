@@ -35,7 +35,10 @@ header .brand-links nav .hot-links {
   display: flex;
   gap: 1.5em;
 }
-header .brand-links nav .hot-links a:hover .svg-arrow {
+header .brand-links nav .hot-links .svg-arrow {
+  transition: 0.2s;
+}
+header .brand-links nav .hot-links :hover .svg-arrow {
   rotate: 180deg;
 }
 header .brand-links nav .hot-links li:nth-child(1),

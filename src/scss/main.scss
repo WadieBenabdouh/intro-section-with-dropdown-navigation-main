@@ -42,7 +42,10 @@ header {
             display: flex;
             gap: 1.5em;
 
-            a:hover .svg-arrow {
+            .svg-arrow{
+                transition: 0.2s;
+            }
+            :hover .svg-arrow {
                 rotate: 180deg;
             }
 
