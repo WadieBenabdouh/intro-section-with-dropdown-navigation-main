@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+$white: hsl(0, 0%, 98%);
+$gray: hsl(0, 0%, 41%);
+$black: hsl(0, 0%, 8%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    color: var(--gray);
+    text-decoration: none;
+}
