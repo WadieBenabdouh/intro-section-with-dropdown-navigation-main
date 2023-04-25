@@ -9,59 +9,102 @@ $black: hsl(0, 0%, 8%);
     box-sizing: border-box;
     font-family: 'Epilogue', sans-serif;
 }
+
 ul {
     list-style-type: none;
 }
+
 nav a {
     color: var(--gray);
     text-decoration: none;
 }
+
 // BODY
-body{
+body {
     padding: 1em 2em;
     min-height: 100vh;
 }
+
 // HEADER
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    .brand-links{
+    .brand-links {
         display: flex;
         flex-basis: 35%;
         align-items: center;
         justify-content: space-between;
-        outline: red solid;
+        // outline: red solid;
 
-        nav ul{
+        nav .hot-links {
             display: flex;
             gap: 1.5em;
 
-            li:nth-child(1), li:nth-child(2){
+            li:nth-child(1),
+            li:nth-child(2) {
                 position: relative;
+                //FEATURES x COMPANY
 
-                .dropdown{
-                    // outline: #0c0c88 solid;
-                    // display: none;
+                .dropdown {
+                    display: none;
                     position: absolute;
-                    top: 2em;
-                    padding: 10px;
+                    // top: 2em;
+                    padding: 10px 0;
+                    border-radius: 10px;
+                    box-shadow: 1px 0px 20px #c2bfbf;
+                    width: 10em;
 
-                    ul{
+                    ul {
                         display: flex;
                         flex-direction: column;
+                        gap: 1.5em;
+                        padding: 10px;
 
-                        li a{
-                            display: flex;
+                        li {
+
+                            a {
+                                display: flex;
+                                align-items: center;
+                                gap: 1em;
+
+                            }
+
+                            a:hover {
+                                color: $gray;
+                            }
                         }
+
+
                     }
                 }
             }
 
-            li:nth-child(1):hover, li:nth-child(2):hover{
-                .dropdown{
+            li:nth-child(1):hover,
+            li:nth-child(2):hover {
+                .dropdown {
                     display: block;
                 }
+            }
+        }
+    }
+
+    .logins{
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            color: $gray;
+
+            li a:hover{
+                color: $black;
+            }
+
+            :nth-child(2){
+                border: 2px solid $gray;
+                padding: 10px;
+                border-radius: 10px;
             }
         }
     }
