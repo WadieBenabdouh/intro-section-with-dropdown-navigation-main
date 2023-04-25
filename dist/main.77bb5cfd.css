@@ -20,4 +20,38 @@ body {
   min-height: 100vh;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .brand-links {
+  display: flex;
+  flex-basis: 35%;
+  align-items: center;
+  justify-content: space-between;
+  outline: red solid;
+}
+header .brand-links nav ul {
+  display: flex;
+  gap: 1.5em;
+}
+header .brand-links nav ul li:nth-child(1), header .brand-links nav ul li:nth-child(2) {
+  position: relative;
+}
+header .brand-links nav ul li:nth-child(1) .dropdown, header .brand-links nav ul li:nth-child(2) .dropdown {
+  position: absolute;
+  top: 2em;
+  padding: 10px;
+}
+header .brand-links nav ul li:nth-child(1) .dropdown ul, header .brand-links nav ul li:nth-child(2) .dropdown ul {
+  display: flex;
+  flex-direction: column;
+}
+header .brand-links nav ul li:nth-child(1) .dropdown ul li a, header .brand-links nav ul li:nth-child(2) .dropdown ul li a {
+  display: flex;
+}
+header .brand-links nav ul li:nth-child(1):hover .dropdown, header .brand-links nav ul li:nth-child(2):hover .dropdown {
+  display: block;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
