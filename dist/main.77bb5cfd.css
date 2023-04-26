@@ -159,6 +159,7 @@ main .artwork img {
 @media screen and (max-width: 768px) {
   body {
     padding-inline: 0;
+    position: relative;
   }
   header {
     padding-inline: 1em;
@@ -177,16 +178,33 @@ main .artwork img {
     border: none;
     cursor: pointer;
     gap: 4px;
+    z-index: 100;
   }
   header #menu-toggle span {
     display: block;
     height: 3px;
     background: #000;
     width: 2em;
-    color: red;
   }
   .mobile-nav {
-    display: none;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 41%);
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    gap: 2em;
+  }
+  .mobile-nav.in-action {
+    left: 50%;
   }
   main {
     flex-direction: column-reverse;

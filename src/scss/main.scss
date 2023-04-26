@@ -120,9 +120,6 @@ main{
     display: flex;
     margin-top: 1em;
     padding-inline: 3em;
-    
-
-    // outline: red solid;
 
     >*{
         width: 50%;
@@ -192,6 +189,7 @@ main{
 
     body{
         padding-inline: 0;
+        position: relative;
     }
     // header
     header{
@@ -214,20 +212,39 @@ main{
             border: none;
             cursor: pointer;
             gap: 4px;
+            z-index: 100;
 
             span {
                 display: block;
                 height: 3px;
                 background: #000;
                 width: 2em;
-                color: red;
               }
         }
     }
     
     // mobile nav
     .mobile-nav{
-        display: none;
+        min-height: 100vh;
+        background-color: $gray;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        transition: all 0.2s;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5em;
+            gap: 2em;
+        }
+    }
+
+    .mobile-nav.in-action {
+        left: 50%;
     }
 
     // main
