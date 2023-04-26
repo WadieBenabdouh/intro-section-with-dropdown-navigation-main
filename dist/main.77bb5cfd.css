@@ -157,6 +157,12 @@ main .artwork img {
 
 /* --------media-queries-------- */
 @media screen and (max-width: 768px) {
+  body {
+    padding-inline: 0;
+  }
+  header {
+    padding-inline: 1em;
+  }
   header .brand-links nav {
     display: none;
   }
@@ -178,6 +184,36 @@ main .artwork img {
     background: #000;
     width: 2em;
     color: red;
+  }
+  main {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 3em;
+  }
+  main > * {
+    width: 100%;
+  }
+  main .text-overlay {
+    margin-top: 0;
+  }
+  main .text-overlay .content {
+    align-items: center;
+    padding: 0 10px;
+  }
+  main .text-overlay .content h1 {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+  }
+  main .text-overlay .content p {
+    width: 100%;
+    text-align: center;
+  }
+  main .text-overlay .partners img {
+    max-width: 3em;
+  }
+  main .artwork img {
+    max-width: 100%;
   }
 }
 

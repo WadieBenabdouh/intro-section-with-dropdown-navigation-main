@@ -189,9 +189,13 @@ main{
 
 /* --------media-queries-------- */
 @media screen and (max-width:768px){
+
+    body{
+        padding-inline: 0;
+    }
     // header
     header{
-        
+        padding-inline: 1em;
         .brand-links{
             nav{
                 display: none;
@@ -202,7 +206,6 @@ main{
                 display: none;
             }
         }
-
         #menu-toggle{
             display: flex;
             flex-direction: column;
@@ -219,6 +222,48 @@ main{
                 width: 2em;
                 color: red;
               }
+        }
+    }
+    
+    // main
+    main{
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 3em;
+
+        >*{
+            width: 100%;
+        }
+
+        .text-overlay{
+            margin-top: 0;
+
+            .content{
+                align-items: center;
+                padding: 0 10px;
+                h1{
+                    font-size: 1.7rem;
+                    width: 100%;
+                    text-align: center;
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .partners{
+                
+                img{
+                    max-width: 3em;
+                }
+            }
+        }
+
+        .artwork {
+            img{
+                max-width: 100%;
+            }
         }
     }
 
