@@ -96,7 +96,8 @@ header .logins ul :nth-child(2) {
 
 main {
   display: flex;
-  margin-top: 5em;
+  margin-top: 3em;
+  padding-inline: 3em;
 }
 main > * {
   width: 50%;
@@ -104,14 +105,45 @@ main > * {
 main .text-overlay {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 4em;
+  margin-top: 6em;
 }
 main .text-overlay .content {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
+main .text-overlay .content h1 {
+  font-size: 3rem;
+  width: 55%;
+  line-height: 1.2em;
+}
+main .text-overlay .content p {
+  width: 65%;
+  line-height: 1.5em;
+}
+main .text-overlay .content a {
+  text-decoration: none;
+  color: hsl(0, 0%, 98%);
+  background: hsl(0, 0%, 8%);
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+main .text-overlay .content a:hover {
+  color: hsl(0, 0%, 8%);
+  background: hsl(0, 0%, 98%);
+  border: solid 1px hsl(0, 0%, 8%);
+}
+main .artwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 main .artwork img {
-  max-width: 100%;
+  max-width: 60%;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

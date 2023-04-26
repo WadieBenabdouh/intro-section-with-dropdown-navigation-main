@@ -118,16 +118,23 @@ header {
 // MAIN
 main{
     display: flex;
-    margin-top: 5em;
+    margin-top: 3em;
+    padding-inline: 3em;
+    
+
+    // outline: red solid;
 
     >*{
         width: 50%;
     }
-    
-
+    // 
     .text-overlay{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        gap: 4em;
+        margin-top: 6em;
+
 
         .content{
             display: flex;
@@ -135,14 +142,37 @@ main{
             gap: 2em;
 
             h1{
-                
+                font-size: 3rem;
+                width: 55%;
+                line-height: 1.2em;
+            }
+            p{
+                width: 65%;
+                line-height: 1.5em;
+            }
+            a{
+                text-decoration: none;
+                color: $white;
+                background: $black;
+                width: fit-content;
+                padding: 10px 20px;
+                border-radius: 10px;
+                transition: all 0.3s;
+            }
+            a:hover{
+                color: $black;
+                background: $white;
+                border: solid 1px $black;
             }
         }
     }
-
+    // 
     .artwork{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img{
-            max-width: 100%;
+            max-width: 60%;
         }
     }
 }
