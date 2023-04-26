@@ -185,6 +185,9 @@ main .artwork img {
     width: 2em;
     color: red;
   }
+  .mobile-nav {
+    display: none;
+  }
   main {
     flex-direction: column-reverse;
     padding: 0;

@@ -225,6 +225,11 @@ main{
         }
     }
     
+    // mobile nav
+    .mobile-nav{
+        display: none;
+    }
+
     // main
     main{
         flex-direction: column-reverse;
