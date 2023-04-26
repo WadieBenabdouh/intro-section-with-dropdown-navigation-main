@@ -7,10 +7,9 @@ menu_btn.onclick = () => {
 };
 
 // DARKEN BACKGROUND WHEN TOGGLING BURGER
-const overlayOne = document.querySelector('body')
+const overlayOne = document.querySelector("body");
 
-
-menu_btn.addEventListener('click', function(){
-    this.classList.toggle('active');
-    overlayOne.classList.toggle('active');
-})
+menu_btn.addEventListener("click", function () {
+  this.classList.toggle("active");
+  overlayOne.classList.toggle("active");
+});

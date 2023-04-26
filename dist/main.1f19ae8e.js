@@ -126,10 +126,10 @@ menu_btn.onclick = function () {
 };
 
 // DARKEN BACKGROUND WHEN TOGGLING BURGER
-var overlayOne = document.querySelector('body');
-menu_btn.addEventListener('click', function () {
-  this.classList.toggle('active');
-  overlayOne.classList.toggle('active');
+var overlayOne = document.querySelector("body");
+menu_btn.addEventListener("click", function () {
+  this.classList.toggle("active");
+  overlayOne.classList.toggle("active");
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
