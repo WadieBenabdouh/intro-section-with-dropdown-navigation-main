@@ -94,4 +94,24 @@ header .logins ul :nth-child(2) {
   border-radius: 10px;
 }
 
+main {
+  display: flex;
+  margin-top: 5em;
+}
+main > * {
+  width: 50%;
+}
+main .text-overlay {
+  display: flex;
+  flex-direction: column;
+}
+main .text-overlay .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .artwork img {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

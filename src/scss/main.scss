@@ -114,4 +114,35 @@ header {
         }
     }
 }
-// TODO
+
+// MAIN
+main{
+    display: flex;
+    margin-top: 5em;
+
+    >*{
+        width: 50%;
+    }
+    
+
+    .text-overlay{
+        display: flex;
+        flex-direction: column;
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            h1{
+                
+            }
+        }
+    }
+
+    .artwork{
+        img{
+            max-width: 100%;
+        }
+    }
+}
