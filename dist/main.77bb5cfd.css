@@ -160,6 +160,10 @@ main .artwork img {
   body {
     padding-inline: 0;
     position: relative;
+    transition: all 0.3s;
+  }
+  body.active {
+    background-color: #2b2a2a;
   }
   header {
     padding-inline: 1em;
@@ -198,7 +202,7 @@ main .artwork img {
   }
   .mobile-nav {
     min-height: 100vh;
-    background-color: hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
     position: fixed;
     top: 0;
     left: 100%;

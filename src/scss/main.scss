@@ -190,6 +190,10 @@ main{
     body{
         padding-inline: 0;
         position: relative;
+        transition: all .3s;
+    }
+    body.active{
+        background-color: #2b2a2a;
     }
     // header
     header{
@@ -237,7 +241,7 @@ main{
     // mobile nav
     .mobile-nav{
         min-height: 100vh;
-        background-color: $gray;
+        background-color: $white;
         position: fixed;
         top: 0;
         left: 100%;

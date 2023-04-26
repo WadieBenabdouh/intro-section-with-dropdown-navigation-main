@@ -124,6 +124,13 @@ menu_btn.onclick = function () {
   menu_btn.classList.toggle("is-active");
   mobile_menu.classList.toggle("in-action");
 };
+
+// DARKEN BACKGROUND WHEN TOGGLING BURGER
+var overlayOne = document.querySelector('body');
+menu_btn.addEventListener('click', function () {
+  this.classList.toggle('active');
+  overlayOne.classList.toggle('active');
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
