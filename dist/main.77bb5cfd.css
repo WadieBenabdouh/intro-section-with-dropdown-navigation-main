@@ -49,10 +49,11 @@ header .brand-links nav .hot-links li:nth-child(1) .dropdown,
 header .brand-links nav .hot-links li:nth-child(2) .dropdown {
   display: none;
   position: absolute;
-  padding: 10px 0;
   border-radius: 10px;
   box-shadow: 1px 0px 20px #c2bfbf;
   width: 8em;
+  top: 15px;
+  left: -10px;
 }
 header .brand-links nav .hot-links li:nth-child(1) .dropdown ul,
 header .brand-links nav .hot-links li:nth-child(2) .dropdown ul {
@@ -112,11 +113,11 @@ main .text-overlay {
 main .text-overlay .content {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.5em;
 }
 main .text-overlay .content h1 {
-  font-size: 3rem;
-  width: 55%;
+  font-size: 4rem;
+  width: 73%;
   line-height: 1.2em;
 }
 main .text-overlay .content p {
