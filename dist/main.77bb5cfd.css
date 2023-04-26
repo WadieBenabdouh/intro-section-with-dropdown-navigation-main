@@ -138,6 +138,14 @@ main .text-overlay .content a:hover {
   background: hsl(0, 0%, 98%);
   border: solid 1px hsl(0, 0%, 8%);
 }
+main .text-overlay .partners {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+main .text-overlay .partners img {
+  max-width: 5em;
+}
 main .artwork {
   display: flex;
   justify-content: center;
