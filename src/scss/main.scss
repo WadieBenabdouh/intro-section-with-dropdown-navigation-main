@@ -253,10 +253,14 @@ main{
             }
 
             .partners{
-                
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding-inline: 1em;
+
                 img{
-                    max-width: 3em;
+                    width: 100%;
                 }
+
             }
         }
 

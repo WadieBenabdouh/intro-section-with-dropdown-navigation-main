@@ -209,8 +209,13 @@ main .artwork img {
     width: 100%;
     text-align: center;
   }
+  main .text-overlay .partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-inline: 1em;
+  }
   main .text-overlay .partners img {
-    max-width: 3em;
+    width: 100%;
   }
   main .artwork img {
     max-width: 100%;
