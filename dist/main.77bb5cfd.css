@@ -155,4 +155,30 @@ main .artwork img {
   max-width: 60%;
 }
 
+/* --------media-queries-------- */
+@media screen and (max-width: 768px) {
+  header .brand-links nav {
+    display: none;
+  }
+  header .logins nav {
+    display: none;
+  }
+  header #menu-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    gap: 4px;
+  }
+  header #menu-toggle span {
+    display: block;
+    height: 3px;
+    background: #000;
+    width: 2em;
+    color: red;
+  }
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

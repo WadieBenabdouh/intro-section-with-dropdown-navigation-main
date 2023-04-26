@@ -170,7 +170,7 @@ main{
             display: flex;
             align-items: center;
             gap: 2em;
-            
+
             img {
                 max-width: 5em;
             }
@@ -185,4 +185,42 @@ main{
             max-width: 60%;
         }
     }
+}
+
+/* --------media-queries-------- */
+@media screen and (max-width:768px){
+    // header
+    header{
+        
+        .brand-links{
+            nav{
+                display: none;
+            }
+        }
+        .logins{
+            nav{
+                display: none;
+            }
+        }
+
+        #menu-toggle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            gap: 4px;
+
+            span {
+                display: block;
+                height: 3px;
+                background: #000;
+                width: 2em;
+                color: red;
+              }
+        }
+    }
+
+
 }
