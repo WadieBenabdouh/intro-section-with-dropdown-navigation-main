@@ -161,10 +161,10 @@ main .artwork img {
     padding-inline: 0;
     position: relative;
     transition: all 0.3s;
-    overflow: hidden;
   }
   body.active {
     background-color: #2b2a2a;
+    overflow: hidden;
   }
   header {
     padding-inline: 1em;
