@@ -164,6 +164,7 @@ main .artwork img {
   }
   body.active {
     background-color: #2b2a2a;
+    overflow: hidden;
   }
   header {
     padding-inline: 1em;
