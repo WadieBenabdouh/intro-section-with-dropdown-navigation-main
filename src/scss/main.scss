@@ -273,22 +273,21 @@ main {
             flex-direction: column;
             margin-top: 5em;
             gap: 2em;
-            // outline: #13b86b solid;
+            outline: #13b86b solid;
 
             li {
                 position: relative;
 
-                .mobile-top-link{
+                .mobile-top-link {
                     color: #0004ff;
                     display: flex;
                     align-items: center;
                     gap: 0.5em;
                 }
-                .mobile-top-link:hover .svg-arrow{
+
+                .mobile-top-link:hover .svg-arrow {
                     rotate: 180deg;
                 }
-                
-                
 
                 .mobile-dropdown {
                     width: 8em;
@@ -302,11 +301,11 @@ main {
 
                         li {
                             width: fit-content;
+
                             a {
                                 display: flex;
                                 gap: 0.5em;
                             }
-
                         }
                     }
                 }
