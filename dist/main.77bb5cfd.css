@@ -217,6 +217,7 @@ main .artwork img {
     flex-direction: column;
     margin-top: 5em;
     gap: 2em;
+    position: relative;
   }
   .mobile-nav ul li {
     position: relative;
@@ -243,6 +244,26 @@ main .artwork img {
   .mobile-nav ul li .mobile-dropdown ul li a {
     display: flex;
     gap: 0.5em;
+  }
+  .mobile-nav ul .logins-mobile {
+    position: absolute;
+    top: 27em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-nav ul .logins-mobile nav {
+    text-align: center;
+    width: 100%;
+  }
+  .mobile-nav ul .logins-mobile nav ul {
+    margin: 0;
+    color: hsl(0, 0%, 41%);
+  }
+  .mobile-nav ul .logins-mobile nav ul :nth-child(2) {
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 10px;
+    border-radius: 10px;
   }
   .mobile-nav.in-action {
     left: 50%;
