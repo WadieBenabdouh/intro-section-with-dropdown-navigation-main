@@ -256,6 +256,25 @@ main{
             flex-direction: column;
             margin-top: 5em;
             gap: 2em;
+            outline: #13b86b solid;
+
+            li{
+                position: relative;
+                .mobile-dropdown{
+                    ul{ 
+                        gap: 1em;
+                        outline: red solid;
+                        margin: 0;
+                        // display: none;
+                        li{
+                            a{
+                                display: flex;
+                            }
+                            
+                        }
+                    }
+                }
+            }
         }
     }
 
