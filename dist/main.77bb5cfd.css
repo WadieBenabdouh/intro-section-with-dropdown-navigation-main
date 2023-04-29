@@ -217,13 +217,11 @@ main .artwork img {
     flex-direction: column;
     margin-top: 5em;
     gap: 2em;
-    outline: #13b86b solid;
   }
   .mobile-nav ul li {
     position: relative;
   }
   .mobile-nav ul li .mobile-top-link {
-    color: #0004ff;
     display: flex;
     align-items: center;
     gap: 0.5em;
@@ -236,7 +234,6 @@ main .artwork img {
   }
   .mobile-nav ul li .mobile-dropdown ul {
     gap: 1em;
-    outline: red solid;
     margin: 10px 0 0 0;
     padding-left: 15px;
   }

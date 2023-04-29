@@ -273,13 +273,13 @@ main {
             flex-direction: column;
             margin-top: 5em;
             gap: 2em;
-            outline: #13b86b solid;
+            // outline: #13b86b solid;
 
             li {
                 position: relative;
 
                 .mobile-top-link {
-                    color: #0004ff;
+                    // color: #0004ff;
                     display: flex;
                     align-items: center;
                     gap: 0.5em;
@@ -294,7 +294,7 @@ main {
 
                     ul {
                         gap: 1em;
-                        outline: red solid;
+                        // outline: red solid;
                         margin: 10px 0 0 0;
                         padding-left: 15px;
                         // display: none;
