@@ -221,6 +221,15 @@ main .artwork img {
   .mobile-nav ul li {
     position: relative;
   }
+  .mobile-nav ul li .mobile-top-link {
+    color: #0004ff;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .mobile-nav ul li .mobile-top-link:hover .svg-arrow {
+    rotate: 180deg;
+  }
   .mobile-nav ul li .mobile-dropdown {
     width: 8em;
   }

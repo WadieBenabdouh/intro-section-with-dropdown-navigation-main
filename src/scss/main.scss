@@ -278,6 +278,18 @@ main {
             li {
                 position: relative;
 
+                .mobile-top-link{
+                    color: #0004ff;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5em;
+                }
+                .mobile-top-link:hover .svg-arrow{
+                    rotate: 180deg;
+                }
+                
+                
+
                 .mobile-dropdown {
                     width: 8em;
 
