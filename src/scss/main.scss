@@ -30,6 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     // BRAND LINKS
     .brand-links {
         display: flex;
@@ -42,9 +43,10 @@ header {
             display: flex;
             gap: 1.5em;
 
-            .svg-arrow{
+            .svg-arrow {
                 transition: 0.2s;
             }
+
             :hover .svg-arrow {
                 rotate: 180deg;
             }
@@ -94,6 +96,7 @@ header {
             }
         }
     }
+
     // LOGINS
     .logins {
         ul {
@@ -116,16 +119,17 @@ header {
 }
 
 // MAIN
-main{
+main {
     display: flex;
     margin-top: 1em;
     padding-inline: 3em;
 
-    >*{
+    >* {
         width: 50%;
     }
+
     // 
-    .text-overlay{
+    .text-overlay {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -133,21 +137,23 @@ main{
         margin-top: 6em;
 
 
-        .content{
+        .content {
             display: flex;
             flex-direction: column;
             gap: 1.5em;
 
-            h1{
+            h1 {
                 font-size: 4rem;
                 width: 73%;
                 line-height: 1.2em;
             }
-            p{
+
+            p {
                 width: 65%;
                 line-height: 1.5em;
             }
-            a{
+
+            a {
                 text-decoration: none;
                 color: $white;
                 background: $black;
@@ -156,14 +162,15 @@ main{
                 border-radius: 10px;
                 transition: all 0.3s;
             }
-            a:hover{
+
+            a:hover {
                 color: $black;
                 background: $white;
                 border: solid 1px $black;
             }
         }
-        
-        .partners{
+
+        .partners {
             display: flex;
             align-items: center;
             gap: 2em;
@@ -173,43 +180,50 @@ main{
             }
         }
     }
+
     // 
-    .artwork{
+    .artwork {
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
+
+        img {
             max-width: 60%;
         }
     }
 }
 
 /* --------media-queries-------- */
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-    body{
+    body {
         padding-inline: 0;
         position: relative;
         transition: all .3s;
     }
-    body.active{
+
+    body.active {
         background-color: #2b2a2a;
         overflow: hidden;
     }
+
     // header
-    header{
+    header {
         padding-inline: 1em;
-        .brand-links{
-            nav{
+
+        .brand-links {
+            nav {
                 display: none;
             }
         }
-        .logins{
-            nav{
+
+        .logins {
+            nav {
                 display: none;
             }
         }
-        #menu-toggle{
+
+        #menu-toggle {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -225,22 +239,25 @@ main{
                 background: #000;
                 width: 2em;
                 transition: all 0.3s;
-              }
+            }
         }
-        #menu-toggle.is-active :nth-child(1){
+
+        #menu-toggle.is-active :nth-child(1) {
             transform: rotate(-45deg) translate(-3px, 6px);
-          }
-        #menu-toggle.is-active :nth-child(2){
+        }
+
+        #menu-toggle.is-active :nth-child(2) {
             opacity: 0;
-          }
-          #menu-toggle.is-active :nth-child(3){
+        }
+
+        #menu-toggle.is-active :nth-child(3) {
             transform: rotate(45deg) translate(-3px, -8px);
-          }
+        }
 
     }
-    
+
     // mobile nav
-    .mobile-nav{
+    .mobile-nav {
         min-height: 100vh;
         background-color: $white;
         position: fixed;
@@ -250,27 +267,34 @@ main{
         display: flex;
         justify-content: center;
         transition: all 0.2s;
-        
+
         ul {
             display: flex;
             flex-direction: column;
             margin-top: 5em;
             gap: 2em;
-            outline: #13b86b solid;
+            // outline: #13b86b solid;
 
-            li{
+            li {
                 position: relative;
-                .mobile-dropdown{
-                    ul{ 
+
+                .mobile-dropdown {
+                    width: 8em;
+
+                    ul {
                         gap: 1em;
                         outline: red solid;
-                        margin: 0;
+                        margin: 10px 0 0 0;
+                        padding-left: 15px;
                         // display: none;
-                        li{
-                            a{
+
+                        li {
+                            width: fit-content;
+                            a {
                                 display: flex;
+                                gap: 0.5em;
                             }
-                            
+
                         }
                     }
                 }
@@ -283,38 +307,40 @@ main{
     }
 
     // main
-    main{
+    main {
         flex-direction: column-reverse;
         padding: 0;
         gap: 3em;
 
-        >*{
+        >* {
             width: 100%;
         }
 
-        .text-overlay{
+        .text-overlay {
             margin-top: 0;
 
-            .content{
+            .content {
                 align-items: center;
                 padding: 0 10px;
-                h1{
+
+                h1 {
                     font-size: 1.7rem;
                     width: 100%;
                     text-align: center;
                 }
-                p{
+
+                p {
                     width: 100%;
                     text-align: center;
                 }
             }
 
-            .partners{
+            .partners {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 padding-inline: 1em;
 
-                img{
+                img {
                     width: 100%;
                 }
 
@@ -322,7 +348,7 @@ main{
         }
 
         .artwork {
-            img{
+            img {
                 max-width: 100%;
             }
         }
