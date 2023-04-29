@@ -293,7 +293,7 @@ main {
                 .mobile-dropdown {
                     width: 8em;
 
-                    .thread-nav {
+                    .thread-nav, .thread-navTwo {
                         gap: 1em;
                         // outline: red solid;
                         margin: 10px 0 0 0;
@@ -314,7 +314,7 @@ main {
             }
             .logins-mobile{
                 position: absolute;
-                top: 26em;
+                top: 23em;
                 width: 100%;
                 display: flex;
                 justify-content: center;

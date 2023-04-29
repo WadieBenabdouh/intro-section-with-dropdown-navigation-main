@@ -133,7 +133,6 @@ menu_btn.addEventListener("click", function () {
 });
 
 //MOBILE NAV DROPDOWN UTILITY
-
 function hideMenu() {
   var navbar = document.getElementsByClassName("thread-nav")[0];
   navbar.style.display = "flex";

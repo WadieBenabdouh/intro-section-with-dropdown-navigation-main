@@ -233,23 +233,23 @@ main .artwork img {
   .mobile-nav ul li .mobile-dropdown {
     width: 8em;
   }
-  .mobile-nav ul li .mobile-dropdown .thread-nav {
+  .mobile-nav ul li .mobile-dropdown .thread-nav, .mobile-nav ul li .mobile-dropdown .thread-navTwo {
     gap: 1em;
     margin: 10px 0 0 0;
     padding-left: 15px;
     display: none;
     transition: all 0.2s;
   }
-  .mobile-nav ul li .mobile-dropdown .thread-nav li {
+  .mobile-nav ul li .mobile-dropdown .thread-nav li, .mobile-nav ul li .mobile-dropdown .thread-navTwo li {
     width: fit-content;
   }
-  .mobile-nav ul li .mobile-dropdown .thread-nav li a {
+  .mobile-nav ul li .mobile-dropdown .thread-nav li a, .mobile-nav ul li .mobile-dropdown .thread-navTwo li a {
     display: flex;
     gap: 0.5em;
   }
   .mobile-nav ul .logins-mobile {
     position: absolute;
-    top: 26em;
+    top: 23em;
     width: 100%;
     display: flex;
     justify-content: center;
