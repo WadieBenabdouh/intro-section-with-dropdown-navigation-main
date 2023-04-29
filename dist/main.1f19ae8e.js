@@ -131,6 +131,18 @@ menu_btn.addEventListener("click", function () {
   this.classList.toggle("active");
   overlayOne.classList.toggle("active");
 });
+
+//MOBILE NAV DROPDOWN UTILITY
+
+function hideMenu() {
+  var navbar = document.getElementsByClassName("thread-nav")[0];
+  navbar.style.display = "flex";
+}
+var hideLink = document.querySelector("a[onclick='hideMenu()']");
+hideLink.addEventListener("click", function (event) {
+  event.preventDefault(); // prevent the default behavior of the anchor tag
+  hideMenu();
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
