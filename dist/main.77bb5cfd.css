@@ -226,6 +226,7 @@ main .artwork img {
     display: flex;
     align-items: center;
     gap: 0.5em;
+    justify-content: center;
   }
   .mobile-nav ul li .mobile-dropdown {
     width: 8em;
@@ -247,7 +248,7 @@ main .artwork img {
   }
   .mobile-nav ul .logins-mobile {
     position: absolute;
-    top: 23em;
+    top: 24.5em;
     width: 100%;
     display: flex;
     justify-content: center;

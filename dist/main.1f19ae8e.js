@@ -136,10 +136,15 @@ menu_btn.addEventListener("click", function () {
 
 var navLinks = document.querySelectorAll('.mobile-top-link');
 var navigations = document.querySelectorAll('.mobile-dropdown');
-navLinks.forEach(function (link, index) {
+navLinks.forEach(function (link) {
   link.addEventListener('click', function (e) {
     e.preventDefault();
-    navigations[index].style.display = 'flex';
+    var navigations = this.nextElementSibling;
+    if (navigations.style.display === 'none' || navigations.style.display === '') {
+      navigations.style.display = 'flex';
+    } else {
+      navigations.style.display = 'none';
+    }
   });
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

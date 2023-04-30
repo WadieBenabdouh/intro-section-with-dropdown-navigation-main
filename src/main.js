@@ -19,9 +19,14 @@ menu_btn.addEventListener("click", function () {
 const navLinks = document.querySelectorAll('.mobile-top-link');
 const navigations = document.querySelectorAll('.mobile-dropdown');
 
-navLinks.forEach(function(link, index) {
+navLinks.forEach(function(link) {
   link.addEventListener('click', function(e) {
     e.preventDefault();
-    navigations[index].style.display = 'flex';
+    const navigations = this.nextElementSibling;
+    if (navigations.style.display === 'none' || navigations.style.display === '') {
+      navigations.style.display = 'flex';
+    } else {
+      navigations.style.display = 'none';
+    }
   });
 });
