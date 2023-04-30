@@ -277,7 +277,7 @@ main {
             li {
                 position: relative;
 
-                .mobile-top-link{
+                .mobile-top-link {
                     // color: #0004ff;
                     display: flex;
                     align-items: center;
@@ -307,7 +307,8 @@ main {
                     }
                 }
             }
-            .logins-mobile{
+
+            .logins-mobile {
                 position: absolute;
                 top: 24.5em;
                 width: 100%;
@@ -315,10 +316,10 @@ main {
                 justify-content: center;
                 // align-items: center;
 
-                nav{
+                nav {
                     text-align: center;
-                    
-                    ul{
+
+                    ul {
                         margin: 0;
                         color: $gray;
                         min-width: 7em;
