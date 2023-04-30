@@ -278,7 +278,6 @@ main {
                 position: relative;
 
                 .mobile-top-link {
-                    // color: #0004ff;
                     display: flex;
                     align-items: center;
                     gap: 0.5em;
@@ -314,7 +313,6 @@ main {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                // align-items: center;
 
                 nav {
                     text-align: center;
@@ -390,13 +388,15 @@ main {
 }
 
 // Large Screens
-@media screen and (min-width:769px){
+@media screen and (min-width:769px) {
+
     // header
-    #menu-toggle{
+    #menu-toggle {
         display: none;
     }
+
     // MOBILE NAV
-    .mobile-nav{
+    .mobile-nav {
         display: none;
     }
 }
