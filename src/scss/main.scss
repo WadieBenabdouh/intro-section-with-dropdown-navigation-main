@@ -164,8 +164,7 @@ main {
 
             a:hover {
                 color: $black;
-                background: $white;
-                border: solid 1px $black;
+                background: #c9c9c9;
             }
         }
 
@@ -391,7 +390,7 @@ main {
 }
 
 // Large Screens
-@media screen and (min-width:1024px){
+@media screen and (min-width:769px){
     // header
     #menu-toggle{
         display: none;
