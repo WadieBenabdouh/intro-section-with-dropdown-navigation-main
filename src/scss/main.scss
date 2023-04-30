@@ -193,6 +193,7 @@ main {
 }
 
 /* --------media-queries-------- */
+// Phones
 @media screen and (max-width:768px) {
 
     body {
@@ -387,4 +388,9 @@ main {
             }
         }
     }
+}
+
+// Large Screens
+@media screen and (min-width:1024px){
+    
 }
