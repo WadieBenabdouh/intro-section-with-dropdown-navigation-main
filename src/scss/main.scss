@@ -279,27 +279,24 @@ main {
             li {
                 position: relative;
 
-                .mobile-top-link {
+                .mobile-top-link{
                     // color: #0004ff;
                     display: flex;
                     align-items: center;
                     gap: 0.5em;
                 }
 
-                .mobile-top-link:hover .svg-arrow {
-                    rotate: 180deg;
-                }
 
                 .mobile-dropdown {
                     width: 8em;
+                    display: none;
+                    transition: all 0.2s;
+                    padding-left: 15px;
 
-                    .thread-nav, .thread-navTwo {
+                    .thread-nav {
                         gap: 1em;
-                        // outline: red solid;
+                        outline: red solid;
                         margin: 10px 0 0 0;
-                        padding-left: 15px;
-                        display: none;
-                        transition: all 0.2s;
 
                         li {
                             width: fit-content;

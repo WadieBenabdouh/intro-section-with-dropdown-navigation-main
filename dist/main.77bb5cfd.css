@@ -227,23 +227,21 @@ main .artwork img {
     align-items: center;
     gap: 0.5em;
   }
-  .mobile-nav ul li .mobile-top-link:hover .svg-arrow {
-    rotate: 180deg;
-  }
   .mobile-nav ul li .mobile-dropdown {
     width: 8em;
-  }
-  .mobile-nav ul li .mobile-dropdown .thread-nav, .mobile-nav ul li .mobile-dropdown .thread-navTwo {
-    gap: 1em;
-    margin: 10px 0 0 0;
-    padding-left: 15px;
     display: none;
     transition: all 0.2s;
+    padding-left: 15px;
   }
-  .mobile-nav ul li .mobile-dropdown .thread-nav li, .mobile-nav ul li .mobile-dropdown .thread-navTwo li {
+  .mobile-nav ul li .mobile-dropdown .thread-nav {
+    gap: 1em;
+    outline: red solid;
+    margin: 10px 0 0 0;
+  }
+  .mobile-nav ul li .mobile-dropdown .thread-nav li {
     width: fit-content;
   }
-  .mobile-nav ul li .mobile-dropdown .thread-nav li a, .mobile-nav ul li .mobile-dropdown .thread-navTwo li a {
+  .mobile-nav ul li .mobile-dropdown .thread-nav li a {
     display: flex;
     gap: 0.5em;
   }

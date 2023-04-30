@@ -15,13 +15,13 @@ menu_btn.addEventListener("click", function () {
 });
 
 //MOBILE NAV DROPDOWN UTILITY
-function hideMenu() {
-  var navbar = document.getElementsByClassName("thread-nav")[0];
-  navbar.style.display = "flex";
-}
 
-var hideLink = document.querySelector("a[onclick='hideMenu()']");
-hideLink.addEventListener("click", function (event) {
-  event.preventDefault(); // prevent the default behavior of the anchor tag
-  hideMenu();
+const navLinks = document.querySelectorAll('.mobile-top-link');
+const navigations = document.querySelectorAll('.mobile-dropdown');
+
+navLinks.forEach(function(link, index) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    navigations[index].style.display = 'flex';
+  });
 });

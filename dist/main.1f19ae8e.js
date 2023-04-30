@@ -133,14 +133,14 @@ menu_btn.addEventListener("click", function () {
 });
 
 //MOBILE NAV DROPDOWN UTILITY
-function hideMenu() {
-  var navbar = document.getElementsByClassName("thread-nav")[0];
-  navbar.style.display = "flex";
-}
-var hideLink = document.querySelector("a[onclick='hideMenu()']");
-hideLink.addEventListener("click", function (event) {
-  event.preventDefault(); // prevent the default behavior of the anchor tag
-  hideMenu();
+
+var navLinks = document.querySelectorAll('.mobile-top-link');
+var navigations = document.querySelectorAll('.mobile-dropdown');
+navLinks.forEach(function (link, index) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    navigations[index].style.display = 'flex';
+  });
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -167,7 +167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50600" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50461" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
