@@ -264,7 +264,6 @@ main .artwork img {
     border: 2px solid hsl(0, 0%, 41%);
     padding: 10px;
     border-radius: 10px;
-    outline: #13b86b solid;
   }
   .mobile-nav.in-action {
     left: 50%;
