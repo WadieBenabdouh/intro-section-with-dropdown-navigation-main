@@ -30,3 +30,13 @@ navLinks.forEach(function(link) {
     }
   });
 });
+
+// their animation
+
+navLinks.forEach(function(navLink) {
+    navLinks.addEventListener('click', function(e) {
+        e.preventDefault();
+        const navigations = navLinks.nextElementSibling;
+        navigations.classList.toggle('open');
+    });
+});

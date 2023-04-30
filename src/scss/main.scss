@@ -291,13 +291,13 @@ main {
                 .mobile-dropdown {
                     width: 8em;
                     display: none;
-                    transition: all 0.2s;
                     padding-left: 15px;
 
                     .thread-nav {
                         gap: 1em;
-                        outline: red solid;
+                        // outline: red solid;
                         margin: 10px 0 0 0;
+                        color: $gray;
 
                         li {
                             width: fit-content;
@@ -321,15 +321,17 @@ main {
                 nav{
                     // outline: #13b86b solid;
                     text-align: center;
-                    width: 100%;
                     ul{
                         margin: 0;
                         color: $gray;
+                        min-width: 7em;
 
                         :nth-child(2) {
                             border: 2px solid $gray;
                             padding: 10px;
                             border-radius: 10px;
+                            outline: #13b86b solid;
+
                         }
                     }
                 }

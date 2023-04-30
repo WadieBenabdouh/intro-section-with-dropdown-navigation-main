@@ -231,13 +231,12 @@ main .artwork img {
   .mobile-nav ul li .mobile-dropdown {
     width: 8em;
     display: none;
-    transition: all 0.2s;
     padding-left: 15px;
   }
   .mobile-nav ul li .mobile-dropdown .thread-nav {
     gap: 1em;
-    outline: red solid;
     margin: 10px 0 0 0;
+    color: hsl(0, 0%, 41%);
   }
   .mobile-nav ul li .mobile-dropdown .thread-nav li {
     width: fit-content;
@@ -255,16 +254,17 @@ main .artwork img {
   }
   .mobile-nav ul .logins-mobile nav {
     text-align: center;
-    width: 100%;
   }
   .mobile-nav ul .logins-mobile nav ul {
     margin: 0;
     color: hsl(0, 0%, 41%);
+    min-width: 7em;
   }
   .mobile-nav ul .logins-mobile nav ul :nth-child(2) {
     border: 2px solid hsl(0, 0%, 41%);
     padding: 10px;
     border-radius: 10px;
+    outline: #13b86b solid;
   }
   .mobile-nav.in-action {
     left: 50%;
