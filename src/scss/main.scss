@@ -392,5 +392,12 @@ main {
 
 // Large Screens
 @media screen and (min-width:1024px){
-    
+    // header
+    #menu-toggle{
+        display: none;
+    }
+    // MOBILE NAV
+    .mobile-nav{
+        display: none;
+    }
 }

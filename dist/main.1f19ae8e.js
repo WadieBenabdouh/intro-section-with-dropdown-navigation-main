@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
+//>> BURGER MENU SETTINGS
 var menu_btn = document.querySelector("#menu-toggle");
 var mobile_menu = document.querySelector(".mobile-nav");
 menu_btn.onclick = function () {
@@ -125,25 +126,24 @@ menu_btn.onclick = function () {
   mobile_menu.classList.toggle("in-action");
 };
 
-// DARKEN BACKGROUND WHEN TOGGLING BURGER
+//>> DARKEN BACKGROUND WHEN TOGGLING BURGER
 var overlayOne = document.querySelector("body");
 menu_btn.addEventListener("click", function () {
   this.classList.toggle("active");
   overlayOne.classList.toggle("active");
 });
 
-//MOBILE NAV DROPDOWN UTILITY
-
-var navLinks = document.querySelectorAll('.mobile-top-link');
-var navigations = document.querySelectorAll('.mobile-dropdown');
+//>> MOBILE NAV DROPDOWN UTILITY
+var navLinks = document.querySelectorAll(".mobile-top-link");
+var navigations = document.querySelectorAll(".mobile-dropdown");
 navLinks.forEach(function (link) {
-  link.addEventListener('click', function (e) {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
     var navigations = this.nextElementSibling;
-    if (navigations.style.display === 'none' || navigations.style.display === '') {
-      navigations.style.display = 'flex';
+    if (navigations.style.display === "none" || navigations.style.display === "") {
+      navigations.style.display = "flex";
     } else {
-      navigations.style.display = 'none';
+      navigations.style.display = "none";
     }
   });
 });
@@ -172,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50461" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51567" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
