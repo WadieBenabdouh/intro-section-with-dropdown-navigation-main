@@ -37,7 +37,6 @@ header {
         flex-basis: 35%;
         align-items: center;
         justify-content: space-between;
-        // outline: red solid;
 
         nav .hot-links {
             display: flex;
@@ -274,7 +273,6 @@ main {
             margin-top: 5em;
             gap: 2em;
             position: relative;
-            // outline: #13b86b solid;
 
             li {
                 position: relative;
@@ -295,7 +293,6 @@ main {
 
                     .thread-nav {
                         gap: 1em;
-                        // outline: red solid;
                         margin: 10px 0 0 0;
                         color: $gray;
 
@@ -319,8 +316,8 @@ main {
                 // align-items: center;
 
                 nav{
-                    // outline: #13b86b solid;
                     text-align: center;
+                    
                     ul{
                         margin: 0;
                         color: $gray;
@@ -330,8 +327,6 @@ main {
                             border: 2px solid $gray;
                             padding: 10px;
                             border-radius: 10px;
-                            // outline: #13b86b solid;
-
                         }
                     }
                 }
